@@ -12,12 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-      with:
-        node-version: 20.12.2
-        - name: Instala las dependencias
-        run: npm install
-        - name: Chequar codido
-        run: npm run lint
-        - name: Testear backend
-        run: npm run test
+          with:
+          node-version: 20.12.2
+      - name: Instala las dependencias
+      run: npm install
+      - name: Chequar codido
+      run: npm run lint
+      - name: Testear backend
+      run: npm run test
 
